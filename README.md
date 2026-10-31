@@ -36,3 +36,10 @@ Proth prime with `p - 1 = 119 * 2^23`, supporting transforms up to length
   each output coefficient.
 - `is_primitive_root` factors `p - 1` using primes up to 37; it raises for
   primes whose `p - 1` has larger prime factors.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
