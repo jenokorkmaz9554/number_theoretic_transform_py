@@ -1,6 +1,6 @@
 [project]
 name = "number-theoretic-transform-py"
-version = "0.1.0"
+version = "0.1.1"
 description = "Number Theoretic Transform library for exact integer convolution over a prime finite field."
 requires-python = ">=3.10"
 dependencies = []
